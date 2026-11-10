@@ -81,7 +81,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
 	return (
 		<LanguageProvider>
-			<div className="min-h-screen bg-[#101812] overflow-x-clip pt-3 sm:pt-5">
+			<div className="min-h-screen bg-[#1C2E1F] overflow-x-clip pt-3 sm:pt-5">
 				<div className="sticky top-3 z-50 mx-auto mb-1 w-[min(1320px,calc(100%-1.5rem))] sm:top-5 sm:mb-0 sm:w-[min(1320px,calc(100%-2.5rem))]">
 					<SiteNav />
 				</div>

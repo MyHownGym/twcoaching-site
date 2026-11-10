@@ -12,7 +12,7 @@ const PrivacyPolicy = ({ onBack }) => {
   }, [m.privacyTitle]);
   return (
     <>
-      <div className="min-h-screen bg-[#0C0C0C] text-white">
+      <div className="min-h-screen bg-[#1C2E1F] text-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <button
             onClick={onBack}

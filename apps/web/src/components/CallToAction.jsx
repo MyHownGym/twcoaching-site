@@ -3,7 +3,7 @@ import Reveal from '@/components/Reveal';
 import { useLanguage } from '@/components/LanguageContext';
 const CallToAction = () => {
   const { t } = useLanguage();
-  return <section id="contact" className="bg-[#0C0C0C] py-20 sm:py-32">
+  return <section id="contact" className="bg-[#1C2E1F] py-20 sm:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative bg-gradient-to-br from-gray-900 to-black rounded-3xl p-8 sm:p-12 lg:p-16 overflow-hidden">
           <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between">

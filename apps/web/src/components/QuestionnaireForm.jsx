@@ -335,7 +335,7 @@ const QuestionnaireForm = ({ onComplete, onBack, initialGender }) => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center py-[120px] px-4 sm:px-6 lg:px-8 bg-[#0C0C0C] overflow-hidden">
+        <div className="min-h-screen flex items-center justify-center py-[120px] px-4 sm:px-6 lg:px-8 bg-[#1C2E1F] overflow-hidden">
              <AnimatePresence mode="wait">
                 {step === 1 && (
                     <motion.div

@@ -26,7 +26,7 @@ const directions = ['left', 'up', 'right'];
 
 const Features = () => {
   const { t } = useLanguage();
-  return <section id="about" className="bg-[#0C0C0C] py-20 sm:py-32">
+  return <section id="about" className="bg-[#1C2E1F] py-20 sm:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal direction="up" className="max-w-2xl lg:max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{t.features.heading}<span className="text-[#8FBE3C]">{t.features.highlight}</span>{t.features.headingSuffix}</h2>

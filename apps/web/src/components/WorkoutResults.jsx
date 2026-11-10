@@ -27,7 +27,7 @@ const WorkoutResults = ({ workoutPlan, onReset }) => {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8 bg-[#0C0C0C]"
+      className="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8 bg-[#1C2E1F]"
     >
       <div className="w-full max-w-4xl bg-gray-900/50 border border-gray-800 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-2xl text-white">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">

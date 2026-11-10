@@ -5,7 +5,7 @@
 body {
 	font-family: "DM Sans", sans-serif;
 	overflow-x: clip;
-	@apply bg-[#101812] text-white;
+	@apply bg-[#1C2E1F] text-white;
 }
 
 #top,
