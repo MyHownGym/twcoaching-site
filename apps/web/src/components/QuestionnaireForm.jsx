@@ -38,7 +38,7 @@ const FocusAreaSelector = ({ selectedAreas, toggleArea, onNext }) => {
                         onClick={() => toggleArea(area)}
                         className={`flex items-center justify-center gap-2 w-full px-4 py-3 rounded-full transition-all duration-300 transform
                             ${selectedAreas.includes(area)
-                                ? 'bg-[#8FBE3C] text-black border-transparent'
+                                ? 'bg-[#8FBE3C] tw-lime-grad text-black border-transparent'
                                 : 'bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20'
                             }`}
                         whileHover={{ scale: 1.05 }}
@@ -51,7 +51,7 @@ const FocusAreaSelector = ({ selectedAreas, toggleArea, onNext }) => {
             </div>
              <Button
               onClick={onNext}
-              className="w-full sm:w-auto px-10 py-3 text-lg font-semibold rounded-full bg-[#8FBE3C] text-black hover:bg-[#8FBE3C]/90 transition-all duration-300 shadow-lg mt-4"
+              className="w-full sm:w-auto px-10 py-3 text-lg font-semibold rounded-full bg-[#8FBE3C] tw-lime-grad text-black hover:bg-[#8FBE3C]/90 transition-all duration-300 shadow-lg mt-4"
             >
               Next
             </Button>
@@ -89,7 +89,7 @@ const MeasurementInput = ({ label, value, onValueChange, unit, onUnitChange, uni
                     <button
                         key={u}
                         onClick={() => onUnitChange(u)}
-                        className={`px-4 py-1 rounded-full text-sm font-semibold transition-colors ${unit === u ? 'bg-[#8FBE3C] text-black' : 'text-gray-300 hover:bg-gray-700'}`}
+                        className={`px-4 py-1 rounded-full text-sm font-semibold transition-colors ${unit === u ? 'bg-[#8FBE3C] tw-lime-grad text-black' : 'text-gray-300 hover:bg-gray-700'}`}
                     >
                         {u}
                     </button>
@@ -125,7 +125,7 @@ const BodyMeasurementForm = ({ formData, setFormData, onNext, onBack }) => {
             </div>
             <div className="flex justify-between gap-4 mt-12">
                 <Button type="button" onClick={onBack} className="flex-1 px-6 py-3 text-lg font-semibold rounded-full bg-gray-700 text-white hover:bg-gray-600 transition-all duration-300">Back</Button>
-                <Button onClick={onNext} className="flex-1 px-10 py-3 text-lg font-semibold rounded-full bg-[#8FBE3C] text-black hover:bg-[#8FBE3C]/90 transition-all duration-300 shadow-lg">Next</Button>
+                <Button onClick={onNext} className="flex-1 px-10 py-3 text-lg font-semibold rounded-full bg-[#8FBE3C] tw-lime-grad text-black hover:bg-[#8FBE3C]/90 transition-all duration-300 shadow-lg">Next</Button>
             </div>
         </div>
     );
@@ -213,7 +213,7 @@ const UserDetailsForm = ({ formData, handleChange, handleSelectChange, handleSli
                                     onCheckedChange={(checked) => handleCheckboxChange(item.id, checked)}
                                     className="hidden"
                                 />
-                                <div className={`w-6 h-6 rounded-md border-2 flex items-center justify-center transition-all duration-300 ${formData.equipment[item.id] ? 'bg-[#8FBE3C] border-[#8FBE3C]' : 'border-gray-500'
+                                <div className={`w-6 h-6 rounded-md border-2 flex items-center justify-center transition-all duration-300 ${formData.equipment[item.id] ? 'bg-[#8FBE3C] tw-lime-grad border-[#8FBE3C]' : 'border-gray-500'
                                     }`}>
                                     {formData.equipment[item.id] && <Check className="w-4 h-4 text-black" />}
                                 </div>
@@ -228,7 +228,7 @@ const UserDetailsForm = ({ formData, handleChange, handleSelectChange, handleSli
 
                 <div className="flex justify-between gap-4 mt-10">
                     <Button type="button" onClick={onBack} className="flex-1 px-6 py-3 text-lg font-semibold rounded-full bg-gray-700 text-white hover:bg-gray-600 transition-all duration-300">Back</Button>
-                    <Button type="submit" className="flex-1 px-6 py-3 text-lg font-semibold rounded-full bg-[#8FBE3C] text-black hover:bg-[#8FBE3C]/90 transition-all duration-300 shadow-lg">Generate Workout</Button>
+                    <Button type="submit" className="flex-1 px-6 py-3 text-lg font-semibold rounded-full bg-[#8FBE3C] tw-lime-grad text-black hover:bg-[#8FBE3C]/90 transition-all duration-300 shadow-lg">Generate Workout</Button>
                 </div>
             </form>
         </div>
@@ -335,7 +335,7 @@ const QuestionnaireForm = ({ onComplete, onBack, initialGender }) => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center py-[120px] px-4 sm:px-6 lg:px-8 bg-[#1C2E1F] overflow-hidden">
+        <div className="min-h-screen flex items-center justify-center py-[120px] px-4 sm:px-6 lg:px-8 tw-dark overflow-hidden">
              <AnimatePresence mode="wait">
                 {step === 1 && (
                     <motion.div

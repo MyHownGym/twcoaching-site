@@ -85,7 +85,7 @@ export function CookieBanner() {
         <button
           type="button"
           onClick={banner.acceptAll}
-          className="col-span-2 min-h-11 rounded-full bg-[#8FBE3C] px-3 text-sm font-semibold text-[#101812] transition-colors hover:bg-[#7eae32] sm:col-span-1"
+          className="col-span-2 min-h-11 rounded-full bg-[#8FBE3C] tw-lime-grad px-3 text-sm font-semibold text-[#101812] transition-colors hover:bg-[#7eae32] sm:col-span-1"
         >
           {t.cookies.accept}
         </button>

@@ -26,7 +26,7 @@ const LanguageSwitcher = () => {
             aria-label={option.label}
             className={`flex h-8 w-8 items-center justify-center rounded-full text-[11px] font-bold leading-none transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8FBE3C] sm:h-9 sm:w-9 sm:text-xs ${
               active
-                ? 'bg-[#8FBE3C] text-[#101812]'
+                ? 'bg-[#8FBE3C] tw-lime-grad text-[#101812]'
                 : 'text-[#101812]/45 hover:text-[#101812]'
             }`}
           >

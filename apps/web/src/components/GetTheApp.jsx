@@ -24,7 +24,7 @@ const GetTheApp = () => {
         aria-label="Obtenir l'application"
         className="fixed bottom-5 left-4 z-40 flex items-center gap-2 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 pl-2 pr-4 py-2 text-white shadow-lg transition-all duration-300 hover:bg-white/20 hover:scale-[1.03] active:scale-[0.98] sm:hidden"
       >
-        <span className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-xl bg-[#1C2E1F] border border-white/30">
+        <span className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-xl tw-dark border border-white/30">
           <img
             src={LOGO_URL}
             alt="TW Coaching"
@@ -36,7 +36,7 @@ const GetTheApp = () => {
 
       {/* Explanation dialog */}
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-md max-h-[85vh] overflow-y-auto bg-[#1C2E1F] border border-white/15 text-white rounded-2xl">
+        <DialogContent className="max-w-md max-h-[85vh] overflow-y-auto tw-dark border border-white/15 text-white rounded-2xl">
           <DialogHeader>
             <DialogTitle className="text-xl font-bold text-white flex items-center gap-2">
               <Smartphone className="h-5 w-5 text-[#8FBE3C]" />

@@ -3,7 +3,7 @@ import Reveal from '@/components/Reveal';
 import { useLanguage } from '@/components/LanguageContext';
 const CallToAction = () => {
   const { t } = useLanguage();
-  return <section id="contact" className="bg-[#1C2E1F] py-20 sm:py-32">
+  return <section id="contact" className="tw-dark py-20 sm:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative bg-gradient-to-br from-gray-900 to-black rounded-3xl p-8 sm:p-12 lg:p-16 overflow-hidden">
           <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between">
@@ -13,7 +13,7 @@ const CallToAction = () => {
               </h2>
               <p className="mt-4 text-lg text-gray-300">{t.cta.subtitle}</p>
               <div className="mt-8">
-                <a href="https://calendly.com/tw_coaching" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-lg font-semibold rounded-full bg-[#8FBE3C] text-black hover:bg-[#8FBE3C]/90 transition-all duration-300 shadow-lg hover:shadow-xl">
+                <a href="https://calendly.com/tw_coaching" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-lg font-semibold rounded-full bg-[#8FBE3C] tw-lime-grad text-black hover:bg-[#8FBE3C]/90 transition-all duration-300 shadow-lg hover:shadow-xl">
                   {t.cta.button}
                 </a>
               </div>
@@ -27,7 +27,7 @@ const CallToAction = () => {
           </div>
 
           <div className="absolute top-0 left-0 w-full h-full opacity-10">
-            <div className="absolute -top-20 -left-20 w-64 h-64 bg-[#8FBE3C] rounded-full filter blur-3xl"></div>
+            <div className="absolute -top-20 -left-20 w-64 h-64 bg-[#8FBE3C] tw-lime-grad rounded-full filter blur-3xl"></div>
             <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-[#1E04FB] rounded-full filter blur-3xl"></div>
           </div>
         </div>

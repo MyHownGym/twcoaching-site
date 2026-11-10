@@ -11,7 +11,7 @@ const LegalMentions = ({ onBack }) => {
   }, [m.mentionsTitle]);
   return (
     <>
-      <div className="min-h-screen bg-[#1C2E1F] text-white">
+      <div className="min-h-screen tw-dark text-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <button
             onClick={onBack}

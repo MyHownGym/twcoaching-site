@@ -137,12 +137,12 @@ const SiteNav = () => {
     const on = active === id;
     if (mobile) {
       return `flex min-h-11 items-center rounded-2xl px-4 text-base font-semibold transition-colors ${
-        on ? 'bg-[#8FBE3C] text-[#101812]' : 'text-[#101812] hover:bg-[#8FBE3C]/20'
+        on ? 'bg-[#8FBE3C] tw-lime-grad text-[#101812]' : 'text-[#101812] hover:bg-[#8FBE3C]/20'
       }`;
     }
     return `inline-flex items-center rounded-full border px-2 py-2 text-[12px] font-semibold transition-colors lg:px-2.5 lg:text-[13px] xl:px-3.5 xl:text-sm ${
       on
-        ? 'border-[#8FBE3C] bg-[#8FBE3C] text-[#101812]'
+        ? 'border-[#8FBE3C] bg-[#8FBE3C] tw-lime-grad text-[#101812]'
         : 'border-transparent text-[#101812] hover:border-[#8FBE3C] hover:bg-[#8FBE3C]/15'
     }`;
   };

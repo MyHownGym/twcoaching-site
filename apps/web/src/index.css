@@ -5,7 +5,7 @@
 body {
 	font-family: "DM Sans", sans-serif;
 	overflow-x: clip;
-	@apply bg-[#1C2E1F] text-white;
+	@apply bg-[#141B0C] text-white;
 }
 
 #top,
@@ -201,3 +201,8 @@ body {
 		transition: none;
 	}
 }
+
+/* Logo-inspired greens: dark lime-tinted background with a soft glow, lime gradients on accents. */
+.tw-dark{background-color:#141B0C;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(218,241,33,.13),transparent 70%),radial-gradient(ellipse 60% 45% at 100% 100%,rgba(143,190,60,.12),transparent 70%),linear-gradient(180deg,#141B0C 0%,#1A2410 100%)}
+.tw-lime-grad{background-image:linear-gradient(110deg,#DAF121 0%,#B5DA2E 50%,#8FBE3C 100%)}
+.tw-olive-grad{background-image:linear-gradient(160deg,#5E8A1E 0%,#4A6D17 55%,#334C10 100%)}

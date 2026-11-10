@@ -30,7 +30,7 @@ const DurationSwitch = ({ durations, active, onChange, featured }) => (
           onClick={() => onChange(d.id)}
           className={`px-2.5 py-1.5 transition-colors ${
             on
-              ? 'bg-[#8FBE3C] text-black'
+              ? 'bg-[#8FBE3C] tw-lime-grad text-black'
               : featured
                 ? 'text-white/80 hover:text-white'
                 : 'text-gray-600 hover:text-black'
@@ -95,9 +95,9 @@ const SubsCard = ({ category, index, copy, lang, sessionValue }) => {
 
   return (
     <Reveal direction={directions[index]} delay={index * 0.1} className={`h-full ${featured ? 'order-first md:order-none' : ''}`}>
-      <div className={`relative p-8 rounded-2xl border flex flex-col h-full transition-all duration-300 hover:shadow-md ${featured ? 'bg-[#5A8020] border-[#5A8020] shadow-lg ring-1 ring-[#8FBE3C]/50' : 'bg-white border-gray-200 shadow-sm'}`}>
+      <div className={`relative p-8 rounded-2xl border flex flex-col h-full transition-all duration-300 hover:shadow-md ${featured ? 'bg-[#52751D] tw-olive-grad border-[#52751D] shadow-lg ring-1 ring-[#8FBE3C]/50' : 'bg-white border-gray-200 shadow-sm'}`}>
         {featured && (
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full bg-[#8FBE3C] text-[#1a1a1a] text-sm font-bold uppercase tracking-wide whitespace-nowrap shadow-md ring-2 ring-white">
+          <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full bg-[#8FBE3C] tw-lime-grad text-[#1a1a1a] text-sm font-bold uppercase tracking-wide whitespace-nowrap shadow-md ring-2 ring-white">
             {copy.bestSeller}
           </div>
         )}
@@ -122,7 +122,7 @@ const SubsCard = ({ category, index, copy, lang, sessionValue }) => {
             {copy.commit} {months} {months === 1 ? copy.month : copy.months}
           </p>
           {saved > 0 && (
-            <p className={`mt-1 text-sm font-semibold ${featured ? 'text-[#8FBE3C]' : 'text-[#5A8020]'}`}>
+            <p className={`mt-1 text-sm font-semibold ${featured ? 'text-[#8FBE3C]' : 'text-[#52751D]'}`}>
               {copy.save} {saved} %
             </p>
           )}
@@ -143,7 +143,7 @@ const SubsCard = ({ category, index, copy, lang, sessionValue }) => {
             href="https://calendly.com/tw_coaching"
             target="_blank"
             rel="noopener noreferrer"
-            className={`block w-full text-center py-3 text-base font-semibold rounded-full transition-all duration-300 shadow-sm hover:shadow-md ${featured ? 'bg-white text-[#5A8020] hover:bg-[#5A8020] hover:text-white' : 'bg-[#8FBE3C] text-black hover:bg-black hover:text-[#8FBE3C]'}`}
+            className={`block w-full text-center py-3 text-base font-semibold rounded-full transition-all duration-300 shadow-sm hover:shadow-md ${featured ? 'bg-white text-[#52751D] hover:bg-[#52751D] hover:text-white' : 'bg-[#8FBE3C] tw-lime-grad text-black hover:bg-black hover:text-[#8FBE3C]'}`}
           >
             {copy.cta}
           </a>
@@ -216,7 +216,7 @@ const WorkoutTypes = () => {
                 type="button"
                 onClick={() => setOffer(item.id)}
                 className={`px-5 py-2 text-sm font-bold rounded-full transition-colors ${
-                  offer === item.id ? 'bg-[#5A8020] text-white' : 'text-gray-600 hover:text-black'
+                  offer === item.id ? 'bg-[#52751D] tw-olive-grad text-white' : 'text-gray-600 hover:text-black'
                 }`}
               >
                 {item.label}
@@ -233,7 +233,7 @@ const WorkoutTypes = () => {
                 type="button"
                 onClick={() => setMode(item.id)}
                 className={`px-5 py-2 text-sm font-bold rounded-full transition-colors ${
-                  mode === item.id ? 'bg-[#8FBE3C] text-black' : 'text-gray-600 hover:text-black'
+                  mode === item.id ? 'bg-[#8FBE3C] tw-lime-grad text-black' : 'text-gray-600 hover:text-black'
                 }`}
               >
                 {item.label}
@@ -253,9 +253,9 @@ const WorkoutTypes = () => {
             const mobileOrder = featured ? 'order-first md:order-none' : '';
             return (
               <Reveal key={`${offer}-${pack.title}`} direction={directions[index]} delay={index * 0.1} className={`h-full ${mobileOrder}`}>
-                <div className={`relative p-8 rounded-2xl border flex flex-col h-full transition-all duration-300 hover:shadow-md ${featured ? 'bg-[#5A8020] border-[#5A8020] shadow-lg ring-1 ring-[#8FBE3C]/50' : 'bg-white border-gray-200 shadow-sm'}`}>
+                <div className={`relative p-8 rounded-2xl border flex flex-col h-full transition-all duration-300 hover:shadow-md ${featured ? 'bg-[#52751D] tw-olive-grad border-[#52751D] shadow-lg ring-1 ring-[#8FBE3C]/50' : 'bg-white border-gray-200 shadow-sm'}`}>
                   {featured && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full bg-[#8FBE3C] text-[#1a1a1a] text-sm font-bold uppercase tracking-wide whitespace-nowrap shadow-md ring-2 ring-white">
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full bg-[#8FBE3C] tw-lime-grad text-[#1a1a1a] text-sm font-bold uppercase tracking-wide whitespace-nowrap shadow-md ring-2 ring-white">
                       {copy.bestSeller}
                     </div>
                   )}
@@ -270,7 +270,7 @@ const WorkoutTypes = () => {
                       {chf(pack.perSession)}
                       <span className={`ml-1 text-base font-semibold ${featured ? 'text-white/70' : 'text-gray-500'}`}>{copy.perSession}</span>
                     </div>
-                    <p className={`mt-2 text-sm font-semibold ${featured ? 'text-[#8FBE3C]' : 'text-[#5A8020]'}`}>
+                    <p className={`mt-2 text-sm font-semibold ${featured ? 'text-[#8FBE3C]' : 'text-[#52751D]'}`}>
                       {copy.save} {saved} %
                     </p>
                     <p className={`mt-2 text-sm font-semibold ${featured ? 'text-white/90' : 'text-black'}`}>
@@ -290,7 +290,7 @@ const WorkoutTypes = () => {
                       href="https://calendly.com/tw_coaching"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`block w-full text-center py-3 text-base font-semibold rounded-full transition-all duration-300 shadow-sm hover:shadow-md ${featured ? 'bg-white text-[#5A8020] hover:bg-[#5A8020] hover:text-white' : 'bg-[#8FBE3C] text-black hover:bg-black hover:text-[#8FBE3C]'}`}
+                      className={`block w-full text-center py-3 text-base font-semibold rounded-full transition-all duration-300 shadow-sm hover:shadow-md ${featured ? 'bg-white text-[#52751D] hover:bg-[#52751D] hover:text-white' : 'bg-[#8FBE3C] tw-lime-grad text-black hover:bg-black hover:text-[#8FBE3C]'}`}
                     >
                       {copy.cta}
                     </a>

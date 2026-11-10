@@ -26,7 +26,7 @@ const directions = ['left', 'up', 'right'];
 
 const Features = () => {
   const { t } = useLanguage();
-  return <section id="about" className="bg-[#1C2E1F] py-20 sm:py-32">
+  return <section id="about" className="tw-dark py-20 sm:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal direction="up" className="max-w-2xl lg:max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{t.features.heading}<span className="text-[#8FBE3C]">{t.features.highlight}</span>{t.features.headingSuffix}</h2>
@@ -39,7 +39,7 @@ const Features = () => {
             return (
               <Reveal key={index} direction={directions[index]} delay={index * 0.1} className="h-full">
                 <Tag href={index === 1 ? '#salles' : undefined} className="relative p-8 rounded-2xl bg-gray-900/50 border border-gray-800 flex flex-col items-start text-left h-full transition-all duration-300 hover:border-[#8FBE3C]/50 hover:bg-gray-900/80">
-                  <div className="absolute top-0 left-0 -mt-4 -ml-4 h-16 w-16 flex items-center justify-center rounded-full bg-[#8FBE3C] text-black text-2xl font-bold shadow-md">
+                  <div className="absolute top-0 left-0 -mt-4 -ml-4 h-16 w-16 flex items-center justify-center rounded-full bg-[#8FBE3C] tw-lime-grad text-black text-2xl font-bold shadow-md">
                     {feature.number}
                   </div>
                   <div className="mt-8">

@@ -84,7 +84,7 @@ const Hero = () => {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mt-10">{t.hero.title}</h1>
           <p className="mt-4 text-lg text-gray-300 max-w-md">{t.hero.subtitle}</p>
           <div className="mt-8">
-            <a href="https://calendly.com/tw_coaching" target="_blank" rel="noopener noreferrer" className="inline-block py-4 px-8 text-lg font-semibold rounded-full bg-[#8FBE3C] text-black hover:bg-[#8FBE3C]/90 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <a href="https://calendly.com/tw_coaching" target="_blank" rel="noopener noreferrer" className="inline-block py-4 px-8 text-lg font-semibold rounded-full bg-[#8FBE3C] tw-lime-grad text-black hover:bg-[#8FBE3C]/90 transition-all duration-300 shadow-lg hover:shadow-xl">
               {t.hero.cta}
             </a>
           </div>

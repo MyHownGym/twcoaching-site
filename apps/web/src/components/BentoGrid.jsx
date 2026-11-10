@@ -40,7 +40,7 @@ const BentoGrid = () => {
               <a href="#about" className="relative group rounded-3xl p-6 flex flex-col justify-between bg-[#673DE6] text-white transition-all duration-300 hover:opacity-90 h-full"><p className="text-xs font-bold uppercase tracking-widest opacity-70">{t.bento.discoverLabel}</p><h3 className="mt-auto text-2xl font-bold">{t.bento.aboutTitle}</h3></a>
             </Reveal>
             <Reveal direction="right" className="h-full">
-              <a href="#contact" className="relative group rounded-3xl p-6 flex flex-col justify-between bg-[#8FBE3C] text-black transition-all duration-300 hover:opacity-90 h-full">
+              <a href="#contact" className="relative group rounded-3xl p-6 flex flex-col justify-between bg-[#8FBE3C] tw-lime-grad text-black transition-all duration-300 hover:opacity-90 h-full">
                 <p className="text-xs font-bold uppercase tracking-widest">{t.bento.questionsLabel}</p>
                 <h3 className="mt-auto text-2xl font-bold">{t.bento.contactTitle}</h3>
               </a>

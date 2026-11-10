@@ -6,7 +6,7 @@ import { openCookiePreferences } from '@/lib/cookie-consent';
 const Footer = ({ onLegal }) => {
   const { t } = useLanguage();
   return (
-    <footer className="bg-[#1C2E1F] border-t border-gray-800 py-10">
+    <footer className="tw-dark border-t border-gray-800 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-3 text-white">
           <img
