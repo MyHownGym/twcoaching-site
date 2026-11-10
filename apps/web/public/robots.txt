@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://twcoaching.ch/sitemap.xml
