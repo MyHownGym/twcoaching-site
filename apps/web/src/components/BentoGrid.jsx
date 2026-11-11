@@ -27,7 +27,7 @@ const BentoGrid = () => {
 
           <Reveal direction="right" className="h-full">
             <a href="#abonnements" className="relative group rounded-3xl p-6 flex flex-col justify-between bg-gray-100 text-black border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-md h-full">
-              <img className="absolute inset-0 w-full h-full object-cover rounded-3xl opacity-10 transition-opacity duration-300" alt="Texture abstraite" src="https://horizons-cdn.hostinger.com/2da5f73c-729e-495b-a66c-e874b8773a9a/a7405667-VJB8T.jpeg" />
+              <img className="absolute inset-0 w-full h-full object-cover rounded-3xl opacity-10 transition-opacity duration-300" alt="Texture abstraite" src="/images/titouan-piste.webp" />
               <div className="relative">
                 <p className="text-sm font-semibold text-gray-500">{t.bento.brandLabel}</p>
                 <h3 className="text-3xl font-bold mt-4 text-black">{t.bento.plansTitle}</h3>
