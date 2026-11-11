@@ -57,7 +57,7 @@ const Hero = () => {
   return <section id="top" className="relative w-full min-h-[640px] h-auto flex flex-col items-center justify-center overflow-hidden py-16 md:min-h-[calc(100dvh-2.5rem)] md:h-auto md:py-0 scroll-mt-28">
       <div className="absolute top-6 left-4 sm:top-8 sm:left-6 lg:left-8 z-20 flex flex-col gap-0.5 sm:flex-row sm:items-center sm:space-x-3 text-white">
         <div className="flex items-center space-x-2 sm:space-x-0">
-          <img src="https://horizons-cdn.hostinger.com/2da5f73c-729e-495b-a66c-e874b8773a9a/08a0d64b63123ec4714bc84f67a7a078.png" alt="Logo TW Coaching" className="h-12 w-12 sm:h-16 sm:w-16 object-contain rounded-[10px] border border-white/25" />
+          <img src="/images/logo-tw.png" alt="Logo TW Coaching" className="h-12 w-12 sm:h-16 sm:w-16 object-contain rounded-[10px] border border-white/25" />
           <svg viewBox="0 0 32 32" className="h-5 w-5 sm:hidden rounded-[3px] shadow-sm flex-shrink-0" aria-label="Coach suisse" role="img">
             <rect width="32" height="32" rx="3" fill="#DA291C" />
             <rect x="13" y="6" width="6" height="20" fill="#fff" />
@@ -75,7 +75,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute inset-0">
-        <img src="https://horizons-cdn.hostinger.com/2da5f73c-729e-495b-a66c-e874b8773a9a/img_7197-X6v4i.JPG" alt="Athlete working out with dumbbells on a rooftop at sunset" className="w-full h-full object-cover" />
+        <img src="/images/souleve-de-terre.webp" alt="Athlete working out with dumbbells on a rooftop at sunset" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
       </div>
 

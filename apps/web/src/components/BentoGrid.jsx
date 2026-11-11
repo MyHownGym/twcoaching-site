@@ -19,7 +19,7 @@ const BentoGrid = () => {
                 <p className="text-sm font-semibold text-gray-500">{t.bento.label}</p>
                 <h3 className="text-3xl font-bold text-black mt-2">{t.bento.title}</h3>
                 <div className="flex-grow mt-4 relative overflow-hidden rounded-2xl">
-                  <img className="absolute inset-0 w-full h-full object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105" alt="Groupe de personnes en séance de coaching" src="https://horizons-cdn.hostinger.com/2da5f73c-729e-495b-a66c-e874b8773a9a/img_7199-w7SJh.JPG" />
+                  <img className="absolute inset-0 w-full h-full object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105" alt="Groupe de personnes en séance de coaching" src="/images/front-squat.webp" />
                 </div>
               </div>
             </Card>

@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/dialog';
 import { useLanguage } from '@/components/LanguageContext';
 
-const LOGO_URL = 'https://horizons-cdn.hostinger.com/2da5f73c-729e-495b-a66c-e874b8773a9a/08a0d64b63123ec4714bc84f67a7a078.png';
+const LOGO_URL = '/images/logo-tw.png';
 
 const GetTheApp = () => {
   const { t } = useLanguage();

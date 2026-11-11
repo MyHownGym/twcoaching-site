@@ -5,7 +5,7 @@ import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { useSlidingPill, pillCss } from '@/hooks/useSlidingPill';
 
 const LOGO =
-  'https://horizons-cdn.hostinger.com/2da5f73c-729e-495b-a66c-e874b8773a9a/08a0d64b63123ec4714bc84f67a7a078.png';
+  '/images/logo-tw.png';
 
 // Order matches the page flow (Hero → Reviews → About → Memberships → Gyms →
 // Contact) so the active highlight progresses smoothly top-to-bottom instead

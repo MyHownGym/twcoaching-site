@@ -3,7 +3,7 @@ import { seo } from '@/lib/seo';
 import { TwApp } from '@/components/tw-app';
 
 const OG_IMAGE =
-	'https://horizons-cdn.hostinger.com/2da5f73c-729e-495b-a66c-e874b8773a9a/08a0d64b63123ec4714bc84f67a7a078.png';
+	'/images/logo-tw.png';
 
 const jsonLd = [
 	{

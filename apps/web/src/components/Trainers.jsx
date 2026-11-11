@@ -7,7 +7,7 @@ const trainers = [{
   name: 'Gym Room',
   specialty: 'Versoix',
   imageAlt: 'Salle Gym Room à Versoix',
-  imageUrl: 'https://horizons-cdn.hostinger.com/2da5f73c-729e-495b-a66c-e874b8773a9a/img_5486-zudv3.jpeg',
+  imageUrl: '/images/gym-room.webp',
   website: 'https://www.gym-room.ch/'
 }, {
   name: 'Fitness Campus',
@@ -20,7 +20,7 @@ const trainers = [{
   name: 'Coach Room',
   specialty: 'Genève',
   imageAlt: 'Salle Coach Room à Genève',
-  imageUrl: 'https://horizons-cdn.hostinger.com/2da5f73c-729e-495b-a66c-e874b8773a9a/coachroom-o6Lnr.jpg',
+  imageUrl: '/images/coach-room.webp',
   website: 'https://coachroom.ch/'
 }, {
   name: 'À domicile',

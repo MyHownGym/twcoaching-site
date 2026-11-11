@@ -10,7 +10,7 @@ const Footer = ({ onLegal }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-3 text-white">
           <img
-            src="https://horizons-cdn.hostinger.com/2da5f73c-729e-495b-a66c-e874b8773a9a/08a0d64b63123ec4714bc84f67a7a078.png"
+            src="/images/logo-tw.png"
             alt="Logo TW Coaching"
             className="h-9 w-9 object-contain"
           />

@@ -21,7 +21,7 @@ const CallToAction = () => {
 
             <Reveal direction="right" className="relative mt-8 lg:mt-0 lg:w-1/2 flex justify-center items-center py-0 lg:py-0">
               <div className="w-full max-w-lg h-80 rounded-xl overflow-hidden shadow-2xl group">
-                <img className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" alt="Man lifting weights" src="https://horizons-cdn.hostinger.com/2da5f73c-729e-495b-a66c-e874b8773a9a/img_7197-sNRU0.JPG" />
+                <img className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" alt="Man lifting weights" src="/images/souleve-de-terre.webp" />
               </div>
             </Reveal>
           </div>
