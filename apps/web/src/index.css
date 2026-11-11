@@ -206,3 +206,12 @@ body {
 .tw-dark{background-color:#141B0C;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(218,241,33,.13),transparent 70%),radial-gradient(ellipse 60% 45% at 100% 100%,rgba(143,190,60,.12),transparent 70%),linear-gradient(180deg,#141B0C 0%,#1A2410 100%)}
 .tw-lime-grad{background-image:linear-gradient(110deg,#DAF121 0%,#B5DA2E 50%,#8FBE3C 100%)}
 .tw-olive-grad{background-image:linear-gradient(160deg,#5E8A1E 0%,#4A6D17 55%,#334C10 100%)}
+
+/* --- Glass nav with sliding pill --- */
+.tw-glass{background:linear-gradient(180deg,rgba(255,255,255,.78),rgba(255,255,255,.6));-webkit-backdrop-filter:blur(22px) saturate(170%);backdrop-filter:blur(22px) saturate(170%);border:1px solid rgba(255,255,255,.65);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -1px 0 rgba(16,24,18,.06),0 12px 32px rgba(16,24,18,.22)}
+.tw-glass-panel{background:rgba(255,255,255,.74);-webkit-backdrop-filter:blur(24px) saturate(170%);backdrop-filter:blur(24px) saturate(170%);border:1px solid rgba(255,255,255,.7);box-shadow:inset 0 1px 0 #fff,0 18px 44px rgba(16,24,18,.25)}
+.tw-pill{position:absolute;left:0;top:0;z-index:0;pointer-events:none;border-radius:999px;background:linear-gradient(110deg,rgba(218,241,33,.95) 0%,rgba(181,218,46,.92) 50%,rgba(143,190,60,.9) 100%);border:1px solid rgba(255,255,255,.7);box-shadow:inset 0 1px 0 rgba(255,255,255,.75),inset 0 -1px 0 rgba(16,24,18,.08),0 4px 14px rgba(143,190,60,.35);transition:transform .45s cubic-bezier(.34,1.45,.5,1),width .45s cubic-bezier(.34,1.45,.5,1),height .45s cubic-bezier(.34,1.45,.5,1),opacity .2s}
+.tw-pill-mobile{border-radius:1rem}
+.tw-nav-item{transition:transform .15s}
+.tw-nav-item:active{transform:scale(.96)}
+@media (prefers-reduced-motion:reduce){.tw-pill{transition:opacity .2s}}

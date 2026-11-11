@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Instagram, Mail, Menu, MessageCircle, X } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageContext';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { useSlidingPill, pillCss } from '@/hooks/useSlidingPill';
 
 const LOGO =
   'https://horizons-cdn.hostinger.com/2da5f73c-729e-495b-a66c-e874b8773a9a/08a0d64b63123ec4714bc84f67a7a078.png';
@@ -37,7 +38,7 @@ const CONTACTS = [
 ];
 
 const SiteNav = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const [active, setActive] = useState('top');
   const [open, setOpen] = useState(false);
   const navRef = useRef(null);
@@ -45,6 +46,8 @@ const SiteNav = () => {
   // instead of letting the scroll-spy cycle through every section it passes.
   const scrollingTo = useRef(null);
   const scrollTimer = useRef(null);
+  const desktopPill = useSlidingPill(active, [lang]);
+  const mobilePill = useSlidingPill(active, [open, lang]);
 
   const update = useCallback(() => {
     const nodes = LINKS.map((link) => document.getElementById(link.id)).filter(Boolean);
@@ -136,20 +139,14 @@ const SiteNav = () => {
   const itemClass = (id, mobile) => {
     const on = active === id;
     if (mobile) {
-      return `flex min-h-11 items-center rounded-2xl px-4 text-base font-semibold transition-colors ${
-        on ? 'bg-[#8FBE3C] tw-lime-grad text-[#101812]' : 'text-[#101812] hover:bg-[#8FBE3C]/20'
-      }`;
+      return `tw-nav-item relative z-[1] flex min-h-11 items-center rounded-2xl px-4 text-base font-semibold text-[#101812] ${on ? 'is-on' : ''}`;
     }
-    return `inline-flex items-center rounded-full border px-2 py-2 text-[12px] font-semibold transition-colors lg:px-2.5 lg:text-[13px] xl:px-3.5 xl:text-sm ${
-      on
-        ? 'border-[#8FBE3C] bg-[#8FBE3C] tw-lime-grad text-[#101812]'
-        : 'border-transparent text-[#101812] hover:border-[#8FBE3C] hover:bg-[#8FBE3C]/15'
-    }`;
+    return `tw-nav-item relative z-[1] inline-flex items-center rounded-full px-2 py-2 text-[12px] font-semibold text-[#101812] lg:px-2.5 lg:text-[13px] xl:px-3.5 xl:text-sm ${on ? 'is-on' : ''}`;
   };
 
   return (
     <nav ref={navRef} aria-label="Navigation" className="relative">
-      <div className="flex items-center gap-2 rounded-full border border-[#d5e3c4] bg-white px-2 py-1.5 shadow-[0_12px_32px_rgba(16,24,18,0.18)] sm:gap-3 sm:px-3 sm:py-2">
+      <div className="tw-glass flex items-center gap-2 rounded-full px-2 py-1.5 shadow-[0_12px_32px_rgba(16,24,18,0.18)] sm:gap-3 sm:px-3 sm:py-2">
         <a
           href="#top"
           onClick={(event) => {
@@ -168,10 +165,12 @@ const SiteNav = () => {
           </span>
         </a>
 
-        <ul className="hidden min-w-0 flex-1 items-center justify-center gap-0.5 md:flex">
+        <ul ref={desktopPill.containerRef} onMouseLeave={desktopPill.clearHover} className="relative isolate hidden min-w-0 flex-1 items-center justify-center gap-0.5 md:flex">
+          <span aria-hidden="true" className="tw-pill" style={pillCss(desktopPill.style)} />
           {LINKS.map((link) => (
             <li key={link.id}>
               <a
+                {...desktopPill.bind(link.id)}
                 href={link.id === 'top' ? '#top' : `#${link.id}`}
                 onClick={(event) => {
                   event.preventDefault();
@@ -223,12 +222,14 @@ const SiteNav = () => {
       {open ? (
         <div
           id="mobile-nav"
-          className="absolute left-0 right-0 top-[calc(100%+0.55rem)] z-50 rounded-[1.6rem] border border-[#d5e3c4] bg-white p-2 shadow-[0_18px_44px_rgba(16,24,18,0.2)] md:hidden"
+          className="tw-glass-panel absolute left-0 right-0 top-[calc(100%+0.55rem)] z-50 rounded-[1.6rem] p-2 shadow-[0_18px_44px_rgba(16,24,18,0.2)] md:hidden"
         >
-          <ul className="flex flex-col gap-1">
+          <ul ref={mobilePill.containerRef} onMouseLeave={mobilePill.clearHover} className="relative isolate flex flex-col gap-1">
+            <span aria-hidden="true" className="tw-pill tw-pill-mobile" style={pillCss(mobilePill.style)} />
             {LINKS.map((link) => (
               <li key={link.id}>
                 <a
+                  {...mobilePill.bind(link.id)}
                   href={link.id === 'top' ? '#top' : `#${link.id}`}
                   onClick={(event) => {
                     event.preventDefault();
