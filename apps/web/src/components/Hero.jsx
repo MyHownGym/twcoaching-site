@@ -90,11 +90,11 @@ const Hero = () => {
           </div>
           <div className="mt-8 flex items-center gap-4">
             <a href="#avis" className="flex -space-x-4 group/avatars" aria-label="Voir les avis clients">
-              <img className="w-12 h-12 rounded-full border-2 border-yellow-400 object-cover transition-transform duration-300 group-hover/avatars:scale-105" alt="Client satisfait 1" src="https://images.hostinger.com/9d9a5740-054d-4776-b08c-905377222e87.png" />
-              <img className="w-12 h-12 rounded-full border-2 border-blue-400 object-cover transition-transform duration-300 group-hover/avatars:scale-105" alt="Cliente satisfaite 2" src="https://images.hostinger.com/b625d7cb-5396-4dc0-9d49-95d6ac3f0212.png" />
-              <img className="w-12 h-12 rounded-full border-2 border-purple-400 object-cover transition-transform duration-300 group-hover/avatars:scale-105" alt="Client satisfait 3" src="https://images.hostinger.com/ae986b1d-6ad5-41cf-9a6d-0691632f92d4.png" />
-              <img className="w-12 h-12 rounded-full border-2 border-red-400 object-cover transition-transform duration-300 group-hover/avatars:scale-105" alt="Cliente satisfaite 4" src="https://images.hostinger.com/f2270240-3ec0-42b5-a59c-be5f337bce36.png" />
-              <img className="w-12 h-12 rounded-full border-2 border-teal-400 object-cover transition-transform duration-300 group-hover/avatars:scale-105" alt="Client satisfait 5" src="https://images.hostinger.com/76193c20-5dd8-485e-b6ef-186526562cef.png" />
+              <span title="Héléna — avis Google" className="flex w-12 h-12 items-center justify-center rounded-full border-2 border-[#141B0C] text-lg font-extrabold text-[#101812] transition-transform duration-300 group-hover/avatars:scale-105" style={{background:"linear-gradient(135deg,#DAF121,#8FBE3C)"}}>H</span>
+              <span title="Jasper — avis Google" className="flex w-12 h-12 items-center justify-center rounded-full border-2 border-[#141B0C] text-lg font-extrabold text-[#101812] transition-transform duration-300 group-hover/avatars:scale-105" style={{background:"linear-gradient(135deg,#B5DA2E,#5E8A1E)"}}>J</span>
+              <span title="Anoosh — avis Google" className="flex w-12 h-12 items-center justify-center rounded-full border-2 border-[#141B0C] text-lg font-extrabold text-[#101812] transition-transform duration-300 group-hover/avatars:scale-105" style={{background:"linear-gradient(135deg,#E8F86A,#B5DA2E)"}}>A</span>
+              <span title="Christian — avis Google" className="flex w-12 h-12 items-center justify-center rounded-full border-2 border-[#141B0C] text-lg font-extrabold text-[#101812] transition-transform duration-300 group-hover/avatars:scale-105" style={{background:"linear-gradient(135deg,#8FBE3C,#334C10)"}}>C</span>
+              <span title="Hans — avis Google" className="flex w-12 h-12 items-center justify-center rounded-full border-2 border-[#141B0C] text-lg font-extrabold text-[#101812] transition-transform duration-300 group-hover/avatars:scale-105" style={{background:"linear-gradient(135deg,#DAF121,#4A6D17)"}}>H</span>
             </a>
             <div>
               <p className="font-bold text-white text-lg">{t.hero.clientsCount}</p>

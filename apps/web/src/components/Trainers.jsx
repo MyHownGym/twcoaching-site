@@ -13,7 +13,7 @@ const trainers = [{
   name: 'Fitness Campus',
   specialty: 'Lancy',
   imageAlt: 'Salle Fitness Campus à Lancy',
-  imageUrl: 'https://horizons-cdn.hostinger.com/2da5f73c-729e-495b-a66c-e874b8773a9a/fitness-campus-A2gdX.webp',
+  imageUrl: '/images/fitness-campus.webp',
   website: 'https://fitnesscampus.com/',
   comingSoon: true
 }, {
