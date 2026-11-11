@@ -57,7 +57,7 @@ const Trainers = () => {
   }, [api, isMobile, autoplay]);
 
   return <section id="salles" className="tw-dark py-20 sm:py-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full px-3 sm:px-5">
         <Reveal direction="up" className="max-w-2xl lg:max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{t.trainers.heading}<span className="text-[#8FBE3C]">{t.trainers.highlight}</span></h2>
           <p className="mt-4 text-lg text-gray-400">
