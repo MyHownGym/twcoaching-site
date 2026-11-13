@@ -11,8 +11,7 @@ const SwissCross = ({ className }) => (
     className={className}
     aria-hidden="true"
   >
-    <rect x="8.5" y="2" width="7" height="20" fill="currentColor" />
-    <rect x="2" y="8.5" width="20" height="7" fill="currentColor" />
+    <path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
   </svg>
 );
 

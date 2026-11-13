@@ -6,8 +6,9 @@ import { openCookiePreferences } from '@/lib/cookie-consent';
 const Footer = ({ onLegal }) => {
   const { t } = useLanguage();
   return (
-    <footer className="tw-dark border-t border-gray-800 py-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+    <footer className="tw-dark py-8 sm:py-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="rounded-3xl bg-gradient-to-br from-gray-900 to-black px-6 py-8 sm:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-3 text-white">
           <img
             src="/images/logo-tw.png"
@@ -57,6 +58,7 @@ const Footer = ({ onLegal }) => {
         </div>
 
         <p className="text-xs text-gray-500">© {new Date().getFullYear()} TW Coaching</p>
+      </div>
       </div>
     </footer>
   );

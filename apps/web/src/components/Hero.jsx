@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Dumbbell, Activity, Expand as Stretch } from 'lucide-react';
+import { UserRound, CreditCard, MapPin } from 'lucide-react';
 import { useLanguage } from '@/components/LanguageContext';
 const fadeLeft = {
   hidden: {
@@ -105,21 +105,21 @@ const Hero = () => {
 
         <motion.div className="flex flex-col gap-4 justify-center mt-8 md:mt-0" variants={fadeRight}>
           <motion.a href="#about" className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 flex items-center text-left transition-all duration-300 hover:bg-white/20" variants={fadeUp}>
-            <Dumbbell size={32} className="text-[#8FBE3C] mr-4 flex-shrink-0" />
+            <UserRound size={32} className="text-[#8FBE3C] mr-4 flex-shrink-0" />
             <div>
               <h3 className="text-lg font-bold text-white">{t.hero.aboutTitle}</h3>
               <p className="text-gray-300 text-sm">{t.hero.aboutDesc}</p>
             </div>
           </motion.a>
           <motion.a href="#abonnements" className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 flex items-center text-left transition-all duration-300 hover:bg-white/20" variants={fadeUp}>
-            <Activity size={32} className="text-[#8FBE3C] mr-4 flex-shrink-0" />
+            <CreditCard size={32} className="text-[#8FBE3C] mr-4 flex-shrink-0" />
             <div>
               <h3 className="text-lg font-bold text-white">{t.hero.plansTitle}</h3>
               <p className="text-gray-300 text-sm">{t.hero.plansDesc}</p>
             </div>
           </motion.a>
           <motion.a href="#salles" className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 flex items-center text-left transition-all duration-300 hover:bg-white/20" variants={fadeUp}>
-            <Stretch size={32} className="text-[#8FBE3C] mr-4 flex-shrink-0" />
+            <MapPin size={32} className="text-[#8FBE3C] mr-4 flex-shrink-0" />
             <div>
               <h3 className="text-lg font-bold text-white">{t.hero.roomsTitle}</h3>
               <p className="text-gray-300 text-sm">{t.hero.roomsDesc}</p>
