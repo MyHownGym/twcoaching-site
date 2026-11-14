@@ -2,6 +2,9 @@ import { useCookieBanner } from '@/hooks/use-cookie-banner';
 import { useLanguage } from '@/components/LanguageContext';
 
 type CookieCopy = {
+  necessary: string;
+  necessaryDesc: string;
+  learnMore: string;
   title: string;
   body: string;
   accept: string;
@@ -33,11 +36,27 @@ export function CookieBanner() {
       className="fixed inset-x-3 bottom-24 z-[70] mx-auto max-w-lg rounded-[1.4rem] border border-[#d5e3c4] bg-white p-4 text-[#101812] shadow-[0_16px_40px_rgba(16,24,18,0.22)]"
     >
       <p className="text-sm font-bold">{t.cookies.title}</p>
-      <p className="mt-1 text-sm leading-relaxed text-[#101812]/75">{t.cookies.body}</p>
+      <p className="mt-1 text-sm leading-relaxed text-[#101812]/75">
+        {t.cookies.body}{' '}
+        <button
+          type="button"
+          onClick={() => window.dispatchEvent(new CustomEvent('tw:open-legal', { detail: 'privacy' }))}
+          className="font-semibold text-[#4A6D17] underline underline-offset-2"
+        >
+          {t.cookies.learnMore}
+        </button>
+      </p>
 
       {banner.isCustomizing ? (
         <fieldset className="mt-3 space-y-2 border-0 p-0">
           <legend className="sr-only">{t.cookies.customize}</legend>
+          <label className="flex items-start gap-3 rounded-xl bg-[#f4f7f1] px-3 py-2">
+            <input type="checkbox" className="mt-1 h-4 w-4 accent-[#8FBE3C]" checked disabled />
+            <span>
+              <span className="block text-sm font-semibold">{t.cookies.necessary}</span>
+              <span className="block text-xs leading-relaxed text-[#101812]/70">{t.cookies.necessaryDesc}</span>
+            </span>
+          </label>
           {categories.map((category) => (
             <label key={category.key} className="flex items-start gap-3 rounded-xl bg-[#f4f7f1] px-3 py-2">
               <input

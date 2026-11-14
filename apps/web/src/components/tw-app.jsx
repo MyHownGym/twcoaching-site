@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Hero from '@/components/Hero';
 import QuestionnaireForm from '@/components/QuestionnaireForm';
@@ -25,6 +25,12 @@ export function TwApp() {
     setWorkoutPlan(null);
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
+
+  useEffect(() => {
+    const open = (event) => handleLegal(event.detail);
+    window.addEventListener('tw:open-legal', open);
+    return () => window.removeEventListener('tw:open-legal', open);
+  }, []);
 
   const handleBackToSite = () => {
     setLegalPage(null);
