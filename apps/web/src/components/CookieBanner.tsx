@@ -24,8 +24,6 @@ export function CookieBanner() {
 
   const categories = [
     { key: 'analytics' as const, title: t.cookies.analytics, desc: t.cookies.analyticsDesc },
-    { key: 'marketing' as const, title: t.cookies.marketing, desc: t.cookies.marketingDesc },
-    { key: 'platformAnalytics' as const, title: t.cookies.platform, desc: t.cookies.platformDesc },
   ];
 
   return (

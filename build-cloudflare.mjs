@@ -9,7 +9,7 @@ fs.rmSync('dist', { recursive: true, force: true });
 execSync('npx react-router build', {
 	cwd: 'apps/web',
 	stdio: 'inherit',
-	env: { ...process.env, NODE_ENV: 'production', STATIC_EXPORT: '1', PREVIEW_HOST: '127.0.0.1', SITE_ORIGIN: origin },
+	env: { ...process.env, NODE_ENV: 'production', STATIC_EXPORT: '1', PREVIEW_HOST: '127.0.0.1', SITE_ORIGIN: origin, ECOMMERCE_GA_ID: process.env.ECOMMERCE_GA_ID ?? 'G-9RVR4HKWEQ' },
 });
 
 const out = 'cloudflare';
