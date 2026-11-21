@@ -14,8 +14,7 @@ const trainers = [{
   specialty: 'Lancy',
   imageAlt: 'Salle Fitness Campus à Lancy',
   imageUrl: '/images/fitness-campus.webp',
-  website: 'https://fitnesscampus.com/',
-  comingSoon: true
+  website: 'https://fitnesscampus.com/'
 }, {
   name: 'Coach Room',
   specialty: 'Genève',
