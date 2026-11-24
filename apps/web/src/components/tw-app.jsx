@@ -7,6 +7,7 @@ import Features from '@/components/Features';
 import LogoCloud from '@/components/LogoCloud';
 import WorkoutTypes from '@/components/WorkoutTypes';
 import Trainers from '@/components/Trainers';
+import Programme from '@/components/Programme';
 import BentoGrid from '@/components/BentoGrid';
 import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
@@ -182,6 +183,7 @@ export function TwApp() {
           <div className={frame}><LogoCloud /></div>
           <div className={frame}><Features /></div>
           <div className={frame}><WorkoutTypes /></div>
+          <div className={frame}><Programme /></div>
           <div className={frame}><Trainers /></div>
           <div className={frame}><BentoGrid /></div>
           <div className={frame}><CallToAction onStart={handleStartQuestionnaire} /></div>

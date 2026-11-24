@@ -3,6 +3,7 @@ export const translations = {
     nav: {
       home: 'Accueil',
       coaching: 'Abonnements',
+      programme: 'Programme',
       rooms: 'Salles',
       reviews: 'Avis',
       about: 'À propos',
@@ -274,6 +275,7 @@ export const translations = {
     nav: {
       home: 'Home',
       coaching: 'Memberships',
+      programme: 'Programme',
       rooms: 'Gyms',
       reviews: 'Reviews',
       about: 'About',

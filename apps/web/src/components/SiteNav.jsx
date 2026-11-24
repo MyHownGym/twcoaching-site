@@ -15,6 +15,7 @@ const LINKS = [
   { id: 'avis', key: 'reviews' },
   { id: 'about', key: 'about' },
   { id: 'abonnements', key: 'coaching' },
+  { id: 'programme', key: 'programme' },
   { id: 'salles', key: 'rooms' },
   { id: 'contact', key: 'contact' },
 ];
