@@ -2,6 +2,7 @@ import React from 'react';
 import { Check, Smartphone } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import { useLanguage } from '@/components/LanguageContext';
+import { useGetTheApp, StoresDialog } from '@/components/GetTheApp';
 
 const COPY = {
   fr: {
@@ -25,7 +26,7 @@ const COPY = {
       'Compatible iOS et Android',
       'Adaptable à la maison ou en salle',
     ],
-    book: 'Réserver',
+    book: 'Get the app',
     contact: 'WhatsApp',
   },
   en: {
@@ -49,7 +50,7 @@ const COPY = {
       'iOS and Android compatible',
       'Adaptable at home or in a gym',
     ],
-    book: 'Book',
+    book: 'Get the app',
     contact: 'WhatsApp',
   },
 };
@@ -57,6 +58,7 @@ const COPY = {
 const Programme = () => {
   const { lang } = useLanguage();
   const c = COPY[lang] ?? COPY.fr;
+  const app = useGetTheApp();
 
   return (
     <section id="programme" className="tw-dark py-20 sm:py-32">
@@ -103,9 +105,9 @@ const Programme = () => {
                 ))}
               </ul>
               <div className="mt-auto flex flex-wrap gap-3 pt-8">
-                <a href="https://calendly.com/tw_coaching" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 flex-1 items-center justify-center rounded-full bg-[#8FBE3C] tw-lime-grad px-6 font-bold text-[#101812]">
+                <button type="button" onClick={app.trigger} className="inline-flex min-h-11 flex-1 items-center justify-center whitespace-nowrap rounded-full bg-[#8FBE3C] tw-lime-grad px-6 font-bold text-[#101812]">
                   {c.book}
-                </a>
+                </button>
                 <a href="https://wa.me/41764580827" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 flex-1 items-center justify-center rounded-full border border-[#101812] px-6 font-bold text-[#101812] hover:bg-[#101812] hover:text-white">
                   {c.contact}
                 </a>
@@ -114,6 +116,7 @@ const Programme = () => {
           </div>
         </Reveal>
       </div>
+      <StoresDialog open={app.open} setOpen={app.setOpen} />
     </section>
   );
 };
