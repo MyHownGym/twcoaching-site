@@ -12,7 +12,7 @@ const trainers = [{
 }, {
   name: 'Fitness Campus',
   specialty: 'Lancy',
-  imageAlt: 'Salle Fitness Campus à Lancy',
+  imageAlt: 'Salle de musculation du Fitness Campus à Lancy, machines Technogym',
   imageUrl: '/images/fitness-campus.webp',
   website: 'https://fitnesscampus.com/'
 }, {
